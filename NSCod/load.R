@@ -20,5 +20,4 @@ catch(stk) <- computeCatch(stk, slot="all")
 # FLIndex
 idx <- readFLIndices("Cod347_2012_ext.tun")
 
-save(stk, idx, file="nscod.RData")
-
+save(stk, idx, file="../data/nscod.RData")
