@@ -1,0 +1,21 @@
+Edited email, 12/11/2012
+
+Hi Jose,
+
+I have attached two new .zip file with PLE_IV data.  One is the full data set, the other only includes the estimated (raised) discards data (i.e. 2000 onwards).  Between them there are two discards files, two data index files and two fleet files:
+
+Discards:
+“discards_raised+recon.txt”  - the current discards data used (i.e. reconstructed past, estimated since 2000).  Previously I had sent a discards file called “discards_recon.txt”, but this did not contain the recent estimated data, and it wouldn’t have been recommended for anybody to use that only to do an assessment.
+“discards_raised.txt” – only discards data since 2000 (estimated)
+
+Data index files (used in the FLR assessment)
+“index_IV_VIId_raised+recon” -  index file calling the full discards file
+“index_IV_VIId_recon” – index file calling the estimated only discards file
+
+Fleet files (containing index data)
+“fleet_AllData_NOT_USED.txt” – all index data (all ages and years)
+“fleet_trimmed.txt”  - only index data used in the assessment (both index files direct to this fleet file)
+
+Cheers,
+David
+

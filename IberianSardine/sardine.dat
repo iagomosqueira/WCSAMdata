@@ -1,0 +1,183 @@
+#C Sardine in VIIIc and IXa : S vary over time
+#_observed data: 
+1978 #_styr
+2011 #_endyr
+1 #_nseas
+ 12 #_months/season
+1 #_spawn_seas
+1 #_Nfleet
+2 #_Nsurveys
+1 #_N_areas
+purse_seine%Acoustic_survey%DEPM_survey
+ -1 0.25 1 #_surveytiming_in_season
+ 1 1 1 #_area_assignments_for_each_fishery_and_survey
+ 1 #_units of catch:  1=bio; 2=num
+ 0.05 #_se of log(catch) only used for init_eq_catch and for Fmethod 2 and 3
+1 #_Ngenders
+6 #_Nages
+ 100 #_init_equil_catch_for_each_fishery
+34 #_N_lines_of_catch_to_read
+#_catch_biomass(mtons):_columns_are_fisheries,year,season
+ 146 1978 1
+ 157 1979 1
+ 195 1980 1
+ 217 1981 1
+ 207 1982 1
+ 184 1983 1
+ 206 1984 1
+ 208 1985 1
+ 187 1986 1
+ 178 1987 1
+ 162 1988 1
+ 141 1989 1
+ 149 1990 1
+ 133 1991 1
+ 130 1992 1
+ 142 1993 1
+ 137 1994 1
+ 125 1995 1
+ 117 1996 1
+ 116 1997 1
+ 109 1998 1
+ 94 1999 1
+ 86 2000 1
+ 102 2001 1
+ 100 2002 1
+ 98 2003 1
+ 98 2004 1
+ 97 2005 1
+ 87 2006 1
+ 96 2007 1
+ 101 2008 1
+ 87 2009 1
+ 90 2010 1
+ 80 2011 1
+
+#
+21 #_N_cpue_and_surveyabundance_observations
+#_Units:  0=numbers; 1=biomass; 2=F
+#_Errtype:  -1=normal; 0=lognormal; >0=T
+#_Fleet Units Errtype
+1 1 0 # purse_seine
+2 0 0 # Acoustic_survey
+3 1 0 # DEPM_survey
+#_year seas index obs err
+ 1996 1 2 10171 0.25 # Acoustic_survey
+ 1997 1 2 14653 0.25 # Acoustic_survey
+ 1998 1 2 12214 0.25 # Acoustic_survey
+ 1999 1 2 12360 0.25 # Acoustic_survey
+ 2000 1 2 13187 0.25 # Acoustic_survey
+ 2001 1 2 22503 0.25 # Acoustic_survey
+ 2002 1 2 23342 0.25 # Acoustic_survey
+ 2003 1 2 15954 0.25 # Acoustic_survey
+ 2005 1 2 26694 0.25 # Acoustic_survey
+ 2006 1 2 17969 0.25 # Acoustic_survey
+ 2007 1 2 10355 0.25 # Acoustic_survey
+ 2008 1 2 8793  0.25 # Acoustic_survey
+ 2009 1 2 10143 0.25 # Acoustic_survey
+ 2010 1 2 9402  0.25 # Acoustic_survey
+ 2011 1 2 2847  0.25 # Acoustic_survey
+ 1997 1 3 308  0.25 # DEPM_survey
+ 1999 1 3 383  0.25 # DEPM_survey
+ 2002 1 3 195  0.25 # DEPM_survey
+ 2005 1 3 383  0.25 # DEPM_survey
+ 2008 1 3 652  0.25 # DEPM_survey
+ 2011 1 3 465  0.25 # DEPM_survey
+
+0 #_N_fleets_with_discard
+#_discard_units (1=same_as_catchunits(bio/num); 2=fraction; 3=numbers)
+#_discard_errtype:  >0 for DF of T-dist(read CV below); 0 for normal with CV; -1 for normal with se; -2 for lognormal
+#Fleet Disc_units err_type
+0 #N discard obs
+#_year seas index obs err
+#
+0 #_N_meanbodywt_obs
+3 #_DF_for_meanbodywt_T-distribution_like
+
+2 # length bin method: 1=use databins; 2=generate from binwidth,min,max below; 3=read vector
+4 # binwidth for population size comp 
+8 # minimum size in the population (lower edge of first bin and size at age 0.00) 
+28 # maximum size in the population (lower edge of last bin) 
+
+0 #_comp_tail_compression
+1e-007 #_add_to_comp
+1 #_combine males into females at or below this bin number
+6 #_N_LengthBins
+ 8 12 16 20 24 28
+0 #_N_Length_obs
+#Yr Seas Flt/Svy Gender Part Nsamp datavector(female-male)
+
+7 #_N_age_bins
+ 0 1 2 3 4 5 6
+1 #_N_ageerror_definitions
+ 0.5 1.5 2.5 3.5 4.5 5.5 6.5
+ 0.1 0.2 0.3 0.3 0.3 0.3 0.4
+49 #_N_Agecomp_obs
+1 #_Lbin_method: 1=poplenbins; 2=datalenbins; 3=lengths
+0 #_combine males into females at or below this bin number
+#Yr Seas Flt/Svy Gender Part Ageerr Lbin_lo Lbin_hi Nsamp datavector(female-male)
+ 1978 1 1 0 0 1 -1 -1 50 869 2297 947 295 137 42 16
+ 1979 1 1 0 0 1 -1 -1 50 674 1536 956 431 189 93 36
+ 1980 1 1 0 0 1 -1 -1 50 857 2037 1562 379 157 47 30
+ 1981 1 1 0 0 1 -1 -1 50 1026 1935 1734 679 195 105 76
+ 1982 1 1 0 0 1 -1 -1 50 62 795 1869 709 353 131 129
+ 1983 1 1 0 0 1 -1 -1 50 1070 577 857 803 324 141 139
+ 1984 1 1 0 0 1 -1 -1 50 118 3312 487 502 301 179 117
+ 1985 1 1 0 0 1 -1 -1 50 268 564 2371 469 294 201 103
+ 1986 1 1 0 0 1 -1 -1 50 304 755 1027 919 333 196 167
+ 1987 1 1 0 0 1 -1 -1 50 1437 543 667 569 535 154 171
+ 1988 1 1 0 0 1 -1 -1 50 521 990 535 439 304 292 189
+ 1989 1 1 0 0 1 -1 -1 50 248 566 909 389 221 200 245
+ 1990 1 1 0 0 1 -1 -1 50 258 602 517 707 295 151 248
+ 1991 1 1 0 0 1 -1 -1 75 1581 477 436 407 266 75 105
+ 1992 1 1 0 0 1 -1 -1 75 498 1002 451 340 186 111 81
+ 1993 1 1 0 0 1 -1 -1 75 88 566 1082 521 257 114 120
+ 1994 1 1 0 0 1 -1 -1 75 121 60 542 1094 272 113 72
+ 1995 1 1 0 0 1 -1 -1 75 31 189 281 830 473 70 64
+ 1996 1 1 0 0 1 -1 -1 75 277 101 348 515 653 197 47
+ 1997 1 1 0 0 1 -1 -1 75 209 549 453 391 337 225 70
+ 1998 1 1 0 0 1 -1 -1 75 449 366 502 352 234 179 106
+ 1999 1 1 0 0 1 -1 -1 75 246 475 362 340 177 106 73
+ 2000 1 1 0 0 1 -1 -1 75 490 355 314 256 194 98 64
+ 2001 1 1 0 0 1 -1 -1 75 220 1172 256 196 126 75 50
+ 2002 1 1 0 0 1 -1 -1 75 107 587 754 181 112 56 40
+ 2003 1 1 0 0 1 -1 -1 75 198 319 446 518 114 61 51
+ 2004 1 1 0 0 1 -1 -1 75 590 181 264 387 378 78 55
+ 2005 1 1 0 0 1 -1 -1 75 169 1006 266 207 191 117 46
+ 2006 1 1 0 0 1 -1 -1 75 18 250 777 129 108 121 81
+ 2007 1 1 0 0 1 -1 -1 75 199 82 313 536 80 83 121
+ 2008 1 1 0 0 1 -1 -1 75 298 219 183 370 412 65 109
+ 2009 1 1 0 0 1 -1 -1 75 378 354 196 125 252 197 84
+ 2010 1 1 0 0 1 -1 -1 75 278 517 263 136 83 129 183
+ 2011 1 1 0 0 1 -1 -1 75 342 452 383 122 88 41 111
+ 1996 1 2 0 0 1 -1 -1 50 0 1636 2136 2505 3257 600 37
+ 1997 1 2 0 0 1 -1 -1 50 0 6401 3501 1677 1384 1426 264
+ 1998 1 2 0 0 1 -1 -1 50 0 2146 4118 2271 1468 1206 1005
+ 1999 1 2 0 0 1 -1 -1 50 0 5926 2713 1595 969 624 533
+ 2000 1 2 0 0 1 -1 -1 50 0 6673 2456 1657 999 721 681
+ 2001 1 2 0 0 1 -1 -1 50 0 19660 1037 702 480 374 250
+ 2002 1 2 0 0 1 -1 -1 50 0 13041 6998 1164 1131 566 442
+ 2003 1 2 0 0 1 -1 -1 50 0 5885 4584 3568 1009 570 338
+ 2005 1 2 0 0 1 -1 -1 50 0 22922 1302 685 763 653 369
+ 2006 1 2 0 0 1 -1 -1 50 0 7455 8309 577 443 578 607
+ 2007 1 2 0 0 1 -1 -1 50 0 1645 3085 4001 637 283 704
+ 2008 1 2 0 0 1 -1 -1 50 0 4020 1098 998 1972 211 494
+ 2009 1 2 0 0 1 -1 -1 50 0 7096 667 419 691 773 497
+ 2010 1 2 0 0 1 -1 -1 50 0 7340 702 537 188 269 366
+ 2011 1 2 0 0 1 -1 -1 50 0 765 1033 337 209 115 388
+
+0 #_N_MeanSize-at-Age_obs
+#Yr Seas Flt/Svy Gender Part Ageerr Ignore datavector(female-male)
+#                                          samplesize(female-male)
+
+0 #_N_environ_variables
+0 #_N_environ_obs
+0 # N sizefreq methods to read 
+
+0 # no tag data 
+
+0 # no morphcomp data 
+
+999
+
+ENDDATA

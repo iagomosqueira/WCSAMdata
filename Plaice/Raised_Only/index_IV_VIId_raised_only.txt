@@ -1,0 +1,13 @@
+Plaice in IV
+1
+west_disc.txt
+natmor.txt
+matprop.txt
+fprop.txt
+mprop.txt
+fleet_trimmed.txt
+discards_raised_only.txt
+lanum_IV_VIId.txt
+wedi.txt
+wela.txt
+laton_IV_VIId.txt

@@ -1,0 +1,17 @@
+./-CANUM.txt 1 9 
+./-CATON.txt 1 8 
+./-DISNUM.txt 1 6 
+./-DISTON.txt 1 5 
+./-FPROP.txt 1 15 
+./-F.txt 1 2 
+./-INDEX.txt 1
+./-LANUM.txt 1 4 
+./-LATON.txt 1 1 
+./-MATPROP.txt 1 14 
+./-MPROP.txt 1 16 
+./-NATMOR.txt 1 13 
+./-N.txt 1 3 
+./-WECA.txt 1 10 
+./-WEDIS.txt 1 7 
+./-WELAND.txt 1 11 
+./-WEST.txt 1 12 

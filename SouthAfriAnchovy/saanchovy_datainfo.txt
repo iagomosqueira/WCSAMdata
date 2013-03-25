@@ -1,0 +1,8 @@
+Edited email, 26/11/2012
+
+Hi Jose
+ 
+I've also attached a DAT file with all the required data. Also, please note that we use an "Effective Sample Size" weighting in the likelihood for each of the proportion-at-age 1 estimates.   This time series is included in the data file - not sure if you want to put it in the word doc too?
+ 
+Cheers for now.
+Carryn

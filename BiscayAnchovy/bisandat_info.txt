@@ -1,0 +1,9 @@
+Edited email, 07/12/2012
+
+Hi José, 
+
+I don't know yet the implications for the assessment for the updated data. Up to now, we don't even know how much the input data will change (if definitely changed). So, in my opinion we could stick to the last assessment data (WGHANSA 2012) and I will let you know how this issue evolves, in case somebody is interested on doing new trials for the potential new data.
+
+About the data, the data we used in the last assessment is attached in the excel file (it is table 3.5.1.1 of WGHANSA 2012). The columns are: Year, fraction of the year within the first period when catches are taken, fraction of the year within the second period when catches are taken, age 1 catch (tonnes) in the first period (until 15th May), total catch (tonnes) in the first period, total catch in tonnes in the second period (from 15th May to end of the year), age 1 biomass from the DEPM, total biomass (age 1+ as all individuals are mature at this time of the year) from the DEPM, age 1 biomass from acoustics and total biomass (age 1+) from acoustics. Probably other models will need different input data. I'm happy to work out other formats if requested. Is that ok? 
+
+leire 

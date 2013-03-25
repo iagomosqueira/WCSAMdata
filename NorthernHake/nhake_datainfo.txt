@@ -1,0 +1,13 @@
+Email, 12/11/2012
+
+Hello José,
+
+Please find attached the input files for SS3 used for the 2012 assessment (in fact the 2011) as this one was also used in 2012 due to lack of spanish data. Be aware that this is the input files for version 3.10a of SS3.
+
+I have the files for version 3.23 if needed but, for a reason unknown to me, I was not able to get the exact same results with this new version so results are slightly different, but not much.
+
+do not hesitate to ask if any question.
+
+regards
+
+Michel

@@ -1,0 +1,10 @@
+Edited email, 15/11/2012
+
+Dear Jose,
+
+I checked the data inputs and they are spot on.
+The input files are attached. Please note, those are NOT strictly input data, the input data is for example still in plusgroup 9 while we assess the stock with plusgroup 8. Hence, we have a script to deal with all our assumptions on the input data before we feed it to the stock assessment model. Hence, the input files are actually the treated input data files after our assumptions have taken place.
+
+Best regards, 
+
+Niels
