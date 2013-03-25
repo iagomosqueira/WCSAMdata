@@ -19,4 +19,4 @@ catch(stk) <- computeCatch(stk, slot="all")
 # FLIndex
 idx <- readFLIndices("hadivef.dat")
 
-save(stk, idx, file="haddock.RData")
+save(stk, idx, file="../data/haddock.RData")
