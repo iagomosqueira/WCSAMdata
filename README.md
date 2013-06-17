@@ -1,9 +1,5 @@
 # Data for evaluation of Stock Assessment methods - WCSAM
 
-## data
-
-RData files containing one FLStock pobject per stock
-
 ## North Atlantic Albacore ./AlbacoreTuna
 
 SS
