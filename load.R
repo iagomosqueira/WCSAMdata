@@ -31,6 +31,7 @@ catch <- FLQuant(dimnames=list(year=data$year, age=c(1, 2)))
 
 # ./CanaryRockfish - SS
 
+
 # ./Haddock - VPA {{{
 stk <- readFLStock("Haddock/hadividx.dat")
 
@@ -78,10 +79,12 @@ idx <- readFLIndices("./Plaice/Raised_and_Reconstructed/fleet_trimmed.txt")
 
 save(stk, idx, file="data/nsplaice.RData") # }}}
 
-# ./SouthAfriAnchovy
+# ./SouthAfriAnchovy - TODO: By hand
 
-# ./SouthernHorseMack
+# ./SouthernHorseMack - ADMB
 
-# ./SpurDog
+# ./SpurDog - ADMB
 
-# ./YellowtailFlounder
+# ./YellowtailFlounder - ADAPT
+
+readFLStock('YellowtailFlounder/ytfounder_datainfo.txt', type='Adapt')
