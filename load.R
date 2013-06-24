@@ -33,7 +33,7 @@ catch <- FLQuant(dimnames=list(year=data$year, age=c(1, 2)))
 
 
 # ./Haddock - VPA {{{
-stk <- readFLStock("Haddock/hadividx.dat")
+stk <- readFLStock("WCSAMdata/Haddock/hadividx.dat")
 
 # All catch in landings, set discards to 0
 discards.n(stk) <- 0
@@ -42,18 +42,24 @@ discards.wt(stk) <- landings.wt(stk)
 catch(stk) <- computeCatch(stk, slot="all")
 
 # FLIndex
-idx <- readFLIndices("Haddock/hadivef.dat")
+idx <- readFLIndices("WCSAMdata/Haddock/hadivef.dat")
 
 save(stk, idx, file="data/haddock.RData") # }}}
 
+library(FLXSA)
+
+stk <- setPlusGroup(stk, plusgroup=15)
+
+xsa.control <- FLXSA.control()
+
+xsa.results <- FLXSA(stk, idx, xsa.control)
+
+stk <- stk + xsa.results
+plot(stk)
+
 # ./Herring - VPA TODO: FIX broken use of VPA suite codes
 
-# Iberian Sardine ./IberianSardine - SS
-
-# NEA Northen Hake ./NorthernHake - SS
-
-# North Sea Cod - ./NSCod - VPA {{{
-stk <- readFLStock("./NSCod/Cod347_ext.idx")
+stk <- readFLStock("WCSAMdata/Herring/-INDEX.txt")
 
 # All catch in landings, set diacrds to 0
 discards.n(stk) <- 0
@@ -62,22 +68,67 @@ discards.wt(stk) <- landings.wt(stk)
 catch(stk) <- computeCatch(stk, slot="all")
 
 # FLIndex
-idx <- readFLIndices("./NSCod/Cod347_2012_ext.tun")
+#idx <- readFLIndices("")
+
+#save(stk, idx, file="Herring.RData")
+
+
+
+# Iberian Sardine ./IberianSardine - SS
+
+# NEA Northen Hake ./NorthernHake - SS
+
+# North Sea Cod - ./NSCod - VPA {{{
+stk <- readFLStock("WCSAMdata/NSCod/Cod347_ext.idx")
+
+# All catch in landings, set diacrds to 0
+discards.n(stk) <- 0
+discards.wt(stk) <- landings.wt(stk)
+
+catch(stk) <- computeCatch(stk, slot="all")
+
+# FLIndex
+idx <- readFLIndices("WCSAMdata/NSCod/Cod347_2012_ext.tun")
 
 save(stk, idx, file="data/nscod.RData")
 
 # }}}
 
+
+library(FLXSA)
+
+stk <- setPlusGroup(stk, plusgroup=15)
+
+xsa.control <- FLXSA.control()
+
+xsa.results <- FLXSA(stk, idx, xsa.control)
+
+stk <- stk + xsa.results
+plot(stk)
+
+
 # North Sea Plaice ./Plaice - VPA {{{
 
-stk <- readFLStock("./Plaice/Raised_and_Reconstructed/index_IV_VIId_raised+recon.txt")
+stk <- readFLStock("WCSAMdata/Plaice/Raised_and_Reconstructed/index_IV_VIId_raised+recon.txt")
 
 discards(stk) <- computeDiscards(stk)
 catch(stk) <- computeCatch(stk, slot="all")
 
-idx <- readFLIndices("./Plaice/Raised_and_Reconstructed/fleet_trimmed.txt")
+idx <- readFLIndices("WCSAMdata/Plaice/Raised_and_Reconstructed/fleet_trimmed.txt")
 
 save(stk, idx, file="data/nsplaice.RData") # }}}
+
+library(FLXSA)
+
+stk <- setPlusGroup(stk, plusgroup=15)
+
+xsa.control <- FLXSA.control()
+
+xsa.results <- FLXSA(stk, idx, xsa.control)
+
+stk <- stk + xsa.results
+plot(stk)
+
 
 # ./SouthAfriAnchovy - TODO: By hand
 
@@ -87,4 +138,4 @@ save(stk, idx, file="data/nsplaice.RData") # }}}
 
 # ./YellowtailFlounder - ADAPT
 
-readFLStock('YellowtailFlounder/ytfounder_datainfo.txt', type='Adapt')
+readFLStock('WCSAMdata/YellowtailFlounder/ytfounder_datainfo.txt', type='Adapt')
